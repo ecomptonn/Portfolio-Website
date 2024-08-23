@@ -406,11 +406,6 @@ PROJECTS
 .projects {
     padding: 70px 0;
     background-color: #212529;
-
-    .skills-bottom {
-        .tech-icons {
-        }
-    }
 }
 
 /*************************** 
@@ -420,9 +415,4 @@ CONTACT
 .contact {
     padding: 70px 0;
     background-color: #353a40;
-
-    .skills-bottom {
-        .tech-icons {
-        }
-    }
 }
