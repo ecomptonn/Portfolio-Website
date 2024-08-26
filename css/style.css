@@ -416,3 +416,17 @@ CONTACT
     padding: 70px 0;
     background-color: #353a40;
 }
+
+/*************************** 
+FOOTER
+****************************/
+
+.footer {
+    padding: 50px 0;
+    background-color: #353a40;
+    color: #fff;
+
+    p {
+        font-size: 1.4rem;
+    }
+}
