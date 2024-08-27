@@ -250,9 +250,13 @@ HERO
         text-align: center;
 
         .typer {
-            font-size: 48px;
-            letter-spacing: 0px;
-            display: inline-block;
+            font-size: 4.8rem;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .cursor {
+            font-size: 4.8rem;
         }
     }
 
