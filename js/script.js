@@ -6,27 +6,28 @@ document.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
         header.classList.add("fixed-header");
         header.classList.remove("transparent-header");
-        document.querySelectorAll(".nav-right-a").forEach((element) => {
+        navLinks.forEach((element) => {
             element.style.marginTop = "22px";
             element.style.marginBottom = "22px";
         });
     } else {
         header.classList.remove("fixed-header");
         header.classList.add("transparent-header");
-        document.querySelectorAll(".nav-right-a").forEach((element) => {
+        navLinks.forEach((element) => {
             element.style.marginTop = "50px";
             element.style.marginBottom = "50px";
         });
     }
 
     let currentSection = "";
+    const viewportCenter = window.innerHeight / 2 + window.scrollY;
+
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (
-            pageYOffset >= sectionTop - sectionHeight / 3 &&
-            pageYOffset < sectionTop + sectionHeight - sectionHeight / 3
-        ) {
+        const sectionCenter = sectionTop + sectionHeight / 2;
+
+        if (Math.abs(viewportCenter - sectionCenter) < sectionHeight / 2) {
             currentSection = section.getAttribute("id");
         }
     });
