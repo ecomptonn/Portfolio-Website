@@ -1,3 +1,7 @@
+/*----------------
+ SCROLL
+ -----------------*/
+
 document.addEventListener("scroll", () => {
     const header = document.querySelector("#header");
     const sections = document.querySelectorAll("main section");
