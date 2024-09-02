@@ -473,17 +473,28 @@ CONTACT
                 transition: all 0.3s ease;
 
                 &:hover {
-                    background-color: var(--main-color);
-                    border-color: var(--main-color);
+                    background-color: #20c997;
+                    border-color: #20c997;
+                }
+            }
+
+            .contact-social-icons {
+                display: flex;
+                flex-direction: column;
+
+                i {
+                    font-size: 4rem;
+                    margin: 0 2rem 0 0;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #20c997;
+                    }
                 }
             }
 
             .contact-email {
                 color: #20c997;
-            }
-
-            .contact-social-icons {
-                display: flex;
             }
         }
     }
