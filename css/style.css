@@ -55,17 +55,21 @@ i {
 }
 
 input {
+    color: var(--main-color);
+    margin: 0 0 24px 0;
+    padding: 1.5rem 2rem;
+    width: 100%;
     font-size: 1.8rem;
     font-family: "Allerta", Helvetica, sans-serif;
-    color: var(--main-color);
-    padding: 1.5rem 2rem;
-    width: 50%;
     border: 1px solid var(--meta-text-color);
+    border-radius: 1rem;
 }
 
 textarea {
+    width: 100%;
     overflow: auto;
     resize: vertical;
+    border-radius: 1rem;
 }
 
 .rotate {
@@ -514,20 +518,29 @@ CONTACT
 
         .contact-info {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
 
             .form-row {
-                display: flex;
-                flex-wrap: wrap;
-
                 .contact-message {
                     min-height: 20rem;
                     font-size: 1.8rem;
                     font-family: "Allerta", Helvetica, sans-serif;
+                    margin: 0 0 16px 0;
                     padding: 1.5rem 2rem;
-                    width: 100%;
                     color: var(--main-color);
                     border: 1px solid var(--meta-text-color);
+                }
+            }
+
+            .contact-btn {
+                display: flex;
+
+                button {
+                    font-size: 1.6rem;
+                    font-family: "Allerta", Helvetica, sans-serif;
+                    padding: 1.2rem 4.1rem;
+                    border-radius: 50rem;
                 }
             }
         }
