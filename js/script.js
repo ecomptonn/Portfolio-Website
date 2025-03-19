@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const phrases = [
         "Web Developer",
         "Full-Stack Engineer",
-        "Open Source Contributor",
         "Software Engineer",
     ];
     const typerElement = document.getElementById("typer");
